@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gene Expression Induction - Genetic Engineering Lab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-container">
+                <img src="images/kle-logo.png" alt="KLE University Logo" class="kle-logo">
+                <h1 class="logo">Genetic Engineering Lab</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <header class="page-header">
+                <h1>Induction of Gene Expression in Bacteria</h1>
+                <p class="subtitle">Experiment 10: Induction of gene expression in bacteria (e.g., IPTG induction)</p>
+            </header>
+
+            <section class="experiment-content">
+                <div class="content-section">
+                    <h2>Introduction</h2>
+                    <p>
+                        Inducible gene expression systems allow controlled production of recombinant proteins in bacterial hosts. 
+                        The lac operon system, induced by IPTG (isopropyl β-D-1-thiogalactopyranoside), is one of the most commonly 
+                        used systems for recombinant protein expression in E. coli. This experiment demonstrates the principles and 
+                        protocols for inducing gene expression to produce recombinant proteins.
+                    </p>
+                </div>
+
+                <div class="content-section">
+                    <h2>Principle</h2>
+                    <h3>Lac Operon System</h3>
+                    <p>
+                        The lac operon is naturally repressed in E. coli. IPTG acts as an inducer by binding to the lac repressor, 
+                        allowing RNA polymerase to transcribe the gene downstream of the lac promoter. In expression vectors, the 
+                        gene of interest is placed under control of the lac promoter or its variants (tac, T7-lac).
+                    </p>
+
+                    <h3>Expression Vectors</h3>
+                    <ul class="results-list">
+                        <li>pET vectors (T7 promoter)</li>
+                        <li>pGEX vectors (tac promoter)</li>
+                        <li>pMAL vectors (tac promoter)</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2>Materials Required</h2>
+                    <ul class="results-list">
+                        <li>E. coli strain with expression plasmid</li>
+                        <li>LB broth with appropriate antibiotic</li>
+                        <li>IPTG stock solution (1 M, sterile)</li>
+                        <li>Shaking incubator (37°C)</li>
+                        <li>Spectrophotometer (for OD600 measurement)</li>
+                        <li>Centrifuge and centrifuge tubes</li>
+                        <li>Cell lysis buffer</li>
+                        <li>Protein analysis equipment</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2>Methodology</h2>
+                    <h3>Step 1: Inoculation</h3>
+                    <p>
+                        Inoculate a single colony from transformation plate into 5-10 mL LB broth with antibiotic. Grow overnight 
+                        at 37°C with shaking (200-250 rpm).
+                    </p>
+
+                    <h3>Step 2: Subculture</h3>
+                    <p>
+                        Transfer 1-2 mL overnight culture to 100-500 mL fresh LB broth with antibiotic. Grow at 37°C with shaking 
+                        until OD600 reaches 0.4-0.6 (early log phase, approximately 2-3 hours).
+                    </p>
+
+                    <h3>Step 3: Induction</h3>
+                    <ol class="results-list">
+                        <li>Measure OD600 of culture</li>
+                        <li>Add IPTG to final concentration:
+                            <ul>
+                                <li>Low-level expression: 0.1-0.5 mM</li>
+                                <li>Standard expression: 0.5-1.0 mM</li>
+                                <li>High-level expression: 1.0-2.0 mM</li>
+                            </ul>
+                        </li>
+                        <li>Continue incubation at optimal temperature:
+                            <ul>
+                                <li>37°C: For soluble proteins</li>
+                                <li>20-30°C: For proteins prone to aggregation</li>
+                                <li>15-18°C: For difficult-to-express proteins</li>
+                            </ul>
+                        </li>
+                        <li>Incubate for 3-6 hours (or overnight for low-temperature induction)</li>
+                    </ol>
+
+                    <h3>Step 4: Harvesting</h3>
+                    <ol class="results-list">
+                        <li>Take samples before and after induction (for comparison)</li>
+                        <li>Centrifuge at 4,000-6,000 rpm for 10-15 minutes</li>
+                        <li>Reserve cell pellet for protein analysis</li>
+                    </ol>
+                </div>
+
+                <div class="content-section">
+                    <h2>Optimization Parameters</h2>
+                    <h3>IPTG Concentration</h3>
+                    <ul class="results-list">
+                        <li>Start with 1 mM IPTG for standard expression</li>
+                        <li>Lower concentrations (0.1-0.5 mM) may improve solubility</li>
+                        <li>Higher concentrations (>1 mM) can lead to inclusion body formation</li>
+                    </ul>
+
+                    <h3>Induction Temperature</h3>
+                    <ul class="results-list">
+                        <li>37°C: Maximum expression, may form inclusion bodies</li>
+                        <li>30°C: Balanced expression and solubility</li>
+                        <li>20-25°C: Lower expression, better for soluble proteins</li>
+                        <li>15-18°C: Very slow expression, highest solubility</li>
+                    </ul>
+
+                    <h3>Induction Time</h3>
+                    <ul class="results-list">
+                        <li>Short (1-3 hours): Less protein, higher quality</li>
+                        <li>Medium (3-6 hours): Standard protocol</li>
+                        <li>Long (overnight): Maximum yield, may affect protein quality</li>
+                    </ul>
+
+                    <h3>Cell Density at Induction</h3>
+                    <ul class="results-list">
+                        <li>OD600 0.4-0.6: Optimal for most proteins</li>
+                        <li>OD600 0.6-0.8: For high-yield expression</li>
+                        <li>Higher OD: May lead to nutrient depletion</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2>Analysis of Expression</h2>
+                    <h3>1. Whole Cell Lysate Analysis</h3>
+                    <ol class="results-list">
+                        <li>Resuspend cell pellet in SDS-PAGE loading buffer</li>
+                        <li>Boil samples for 5 minutes</li>
+                        <li>Run SDS-PAGE gel</li>
+                        <li>Compare induced vs. uninduced samples</li>
+                    </ol>
+
+                    <h3>2. Protein Localization</h3>
+                    <ul class="results-list">
+                        <li><strong>Soluble Fraction:</strong> Cytoplasmic proteins</li>
+                        <li><strong>Insoluble Fraction:</strong> Inclusion bodies</li>
+                        <li><strong>Periplasmic:</strong> Secreted proteins</li>
+                    </ul>
+
+                    <h3>3. Expression Yield</h3>
+                    <p>
+                        Quantify protein using:
+                    </p>
+                    <ul class="results-list">
+                        <li>Bradford or BCA protein assay</li>
+                        <li>Densitometry of Coomassie-stained gels</li>
+                        <li>Western blotting for specific detection</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2>Alternative Inducers</h2>
+                    <ul class="results-list">
+                        <li><strong>IPTG:</strong> Most common, non-metabolizable</li>
+                        <li><strong>Lactose:</strong> Natural inducer, metabolizable</li>
+                        <li><strong>Arabinose:</strong> For araBAD promoter system</li>
+                        <li><strong>Temperature:</strong> For temperature-sensitive systems</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2>Troubleshooting</h2>
+                    <ul class="results-list">
+                        <li><strong>No Expression:</strong> Check promoter, IPTG concentration, cell viability</li>
+                        <li><strong>Low Expression:</strong> Optimize IPTG concentration, temperature, induction time</li>
+                        <li><strong>Inclusion Bodies:</strong> Lower temperature, reduce IPTG, use solubility tags</li>
+                        <li><strong>Protein Degradation:</strong> Use protease-deficient strains, shorter induction time</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2>Applications</h2>
+                    <ul class="results-list">
+                        <li>Recombinant protein production</li>
+                        <li>Enzyme production</li>
+                        <li>Therapeutic protein manufacturing</li>
+                        <li>Protein structure and function studies</li>
+                        <li>Industrial enzyme production</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2>Output</h2>
+                    <div class="output-images">
+                        <div class="output-image-container">
+                            <img src="images/experiment-10-output-1.jpg" alt="Experiment 10 Output Image 1" class="result-image">
+                            <!-- <p class="image-caption">Figure 1: Protein expression before and after IPTG induction</p> -->
+                        </div>
+                        <!-- <div class="output-image-container">
+                            <img src="images/experiment-10-output-2.jpg" alt="Experiment 10 Output Image 2" class="result-image">
+                            <p class="image-caption">Figure 2: SDS-PAGE analysis of induced protein expression</p>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h2>Conclusion</h2>
+                    <p>
+                        IPTG-induced gene expression is a powerful and widely used method for producing recombinant proteins in E. coli. 
+                        Success depends on optimizing multiple parameters including IPTG concentration, induction temperature, timing, 
+                        and cell density. Proper optimization ensures maximum protein yield and quality for various research and 
+                        industrial applications.
+                    </p>
+                </div>
+            </section>
+
+            <div class="container">
+                <a href="index.html" class="back-button">← Back to Home</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Genetic Engineering & Applications Laboratory Course</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

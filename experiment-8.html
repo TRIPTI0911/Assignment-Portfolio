@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNA Ligation & Transformation - Genetic Engineering Lab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-container">
+                <img src="images/kle-logo.png" alt="KLE University Logo" class="kle-logo">
+                <h1 class="logo">Genetic Engineering Lab</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <header class="page-header">
+                <h1>DNA Ligation to Cloning Vectors and Bacterial Transformation</h1>
+                <p class="subtitle">Experiment 8: DNA ligation to cloning vectors and bacterial transformation</p>
+            </header>
+
+            <section class="experiment-content">
+                <div class="content-section">
+                    <h2>Introduction</h2>
+                    <p>
+                        DNA ligation is the process of joining DNA fragments together, typically inserting a DNA fragment of interest 
+                        into a cloning vector. This is followed by transformation, where the recombinant DNA is introduced into 
+                        bacterial cells, allowing amplification and selection of the desired clones. This experiment combines ligation 
+                        and transformation to create recombinant bacterial cells containing the gene of interest.
+                    </p>
+                </div>
+
+                <div class="content-section">
+                    <h2>Principle</h2>
+                    <h3>DNA Ligation</h3>
+                    <p>
+                        DNA ligase catalyzes the formation of phosphodiester bonds between adjacent nucleotides, joining DNA fragments. 
+                        T4 DNA ligase is commonly used for in vitro ligation.
+                    </p>
+
+                    <h3>Bacterial Transformation</h3>
+                    <p>
+                        Competent bacterial cells take up exogenous DNA through temporary membrane permeability created by chemical 
+                        treatment (CaCl₂) and heat shock, or by electroporation.
+                    </p>
+                </div>
+
+                <div class="content-section">
+                    <h2>Materials Required</h2>
+                    <h3>For Ligation</h3>
+                    <ul class="results-list">
+                        <li>Insert DNA (digested fragment)</li>
+                        <li>Vector DNA (digested plasmid)</li>
+                        <li>T4 DNA Ligase</li>
+                        <li>10× T4 DNA Ligase Buffer</li>
+                        <li>ATP (if not in buffer)</li>
+                        <li>Sterile water</li>
+                    </ul>
+
+                    <h3>For Transformation</h3>
+                    <ul class="results-list">
+                        <li>Competent E. coli cells</li>
+                        <li>LB broth</li>
+                        <li>Selective agar plates (with antibiotic)</li>
+                        <li>Ice bath</li>
+                        <li>Water bath (42°C)</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2>Methodology</h2>
+                    <h3>Step 1: Ligation Reaction</h3>
+                    <ol class="results-list">
+                        <li>Determine optimal insert:vector ratio (typically 3:1 for sticky ends, 10:1 for blunt ends)</li>
+                        <li>Prepare ligation mix:
+                            <ul>
+                                <li>Vector DNA (50-100 ng): 1 μL</li>
+                                <li>Insert DNA (calculated amount): X μL</li>
+                                <li>10× Ligase Buffer: 2 μL</li>
+                                <li>T4 DNA Ligase: 1 μL (400 units)</li>
+                                <li>Sterile water: to 20 μL</li>
+                            </ul>
+                        </li>
+                        <li>Mix gently and incubate at 16°C overnight (or 22°C for 2-4 hours)</li>
+                        <li>Heat inactivate at 65°C for 10 minutes</li>
+                    </ol>
+
+                    <h3>Step 2: Transformation</h3>
+                    <ol class="results-list">
+                        <li>Thaw competent cells on ice (10 minutes)</li>
+                        <li>Add ligation mix (5-10 μL) to 50-100 μL competent cells</li>
+                        <li>Incubate on ice for 30 minutes</li>
+                        <li>Heat shock at 42°C for 45-60 seconds</li>
+                        <li>Place immediately on ice for 2 minutes</li>
+                        <li>Add 250-500 μL LB broth (room temperature)</li>
+                        <li>Incubate at 37°C with shaking (200 rpm) for 1 hour</li>
+                        <li>Plate 50-200 μL on selective agar plates</li>
+                        <li>Incubate plates at 37°C overnight (12-16 hours)</li>
+                    </ol>
+                </div>
+
+                <div class="content-section">
+                    <h2>Vector Types</h2>
+                    <h3>1. Plasmid Vectors</h3>
+                    <ul class="results-list">
+                        <li>High copy number (pUC series)</li>
+                        <li>Low copy number (pBR322)</li>
+                        <li>Expression vectors (pET, pGEX)</li>
+                    </ul>
+
+                    <h3>2. Features of Cloning Vectors</h3>
+                    <ul class="results-list">
+                        <li>Multiple cloning site (MCS)</li>
+                        <li>Selectable marker (antibiotic resistance)</li>
+                        <li>Origin of replication (ori)</li>
+                        <li>Promoter and terminator sequences</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2>Selection Strategies</h2>
+                    <h3>Antibiotic Selection</h3>
+                    <p>
+                        Plasmids contain antibiotic resistance genes (e.g., ampicillin, kanamycin). Only transformed cells 
+                        containing the plasmid will survive on antibiotic-containing media.
+                    </p>
+
+                    <h3>Blue-White Screening</h3>
+                    <p>
+                        Vectors with lacZ gene allow visual identification:
+                    </p>
+                    <ul class="results-list">
+                        <li>White colonies: Insert present (lacZ disrupted)</li>
+                        <li>Blue colonies: No insert (lacZ functional)</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2>Results</h2>
+                    <h3>Expected Outcomes</h3>
+                    <ul class="results-list">
+                        <li>Colonies appear on selective plates after overnight incubation</li>
+                        <li>Number of colonies indicates transformation efficiency</li>
+                        <li>Each colony represents a single transformed clone</li>
+                        <li>Multiple colonies needed for screening positive clones</li>
+                    </ul>
+
+                    <h3>Transformation Efficiency</h3>
+                    <p>
+                        Calculate as: (Number of colonies / Amount of DNA used) × Dilution factor
+                    </p>
+                    <p>
+                        Typical efficiency: 10⁵ - 10⁶ CFU/μg DNA
+                    </p>
+                </div>
+
+                <div class="content-section">
+                    <h2>Screening Methods</h2>
+                    <ul class="results-list">
+                        <li><strong>Colony PCR:</strong> Quick screening using insert-specific primers</li>
+                        <li><strong>Restriction Digest:</strong> Confirm insert size by digestion</li>
+                        <li><strong>Sequencing:</strong> Verify exact sequence of insert</li>
+                        <li><strong>Gel Electrophoresis:</strong> Check plasmid size</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2>Factors Affecting Success</h2>
+                    <ul class="results-list">
+                        <li><strong>Insert:Vector Ratio:</strong> Critical for efficient ligation</li>
+                        <li><strong>DNA Quality:</strong> Clean, undamaged DNA is essential</li>
+                        <li><strong>Competent Cells:</strong> High-quality, fresh competent cells</li>
+                        <li><strong>Temperature Control:</strong> Precise temperatures during transformation</li>
+                        <li><strong>Vector Dephosphorylation:</strong> Prevents self-ligation</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2>Troubleshooting</h2>
+                    <ul class="results-list">
+                        <li><strong>No Colonies:</strong> Check transformation efficiency, DNA quality, antibiotic selection</li>
+                        <li><strong>Many Colonies (No Insert):</strong> Self-ligation, improve vector dephosphorylation</li>
+                        <li><strong>Low Efficiency:</strong> Improve competent cell quality, optimize ligation conditions</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2>Applications</h2>
+                    <ul class="results-list">
+                        <li>Gene cloning</li>
+                        <li>Protein expression</li>
+                        <li>Mutagenesis studies</li>
+                        <li>Library construction</li>
+                        <li>Genetic modification</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2>Output</h2>
+                    <div class="output-images">
+                        <div class="output-image-container">
+                            <img src="images/experiment-8-output-1.jpg" alt="Experiment 8 Output Image 1" class="result-image">
+                            <!-- <p class="image-caption">Figure 1: Transformation colonies on selective agar plates</p> -->
+                        </div>
+                        <!-- <div class="output-image-container">
+                            <img src="images/experiment-8-output-2.jpg" alt="Experiment 8 Output Image 2" class="result-image">
+                            <p class="image-caption">Figure 2: Blue-white screening results for recombinant clones</p>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h2>Conclusion</h2>
+                    <p>
+                        DNA ligation and bacterial transformation are fundamental techniques that enable the construction and 
+                        amplification of recombinant DNA molecules. Success depends on optimal ligation conditions, high-quality 
+                        competent cells, and proper selection and screening methods. These techniques form the foundation of modern 
+                        genetic engineering and biotechnology.
+                    </p>
+                </div>
+            </section>
+
+            <div class="container">
+                <a href="index.html" class="back-button">← Back to Home</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Genetic Engineering & Applications Laboratory Course</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

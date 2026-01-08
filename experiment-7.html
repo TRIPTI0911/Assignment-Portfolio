@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restriction Enzyme Digestion - Genetic Engineering Lab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-container">
+                <img src="images/kle-logo.png" alt="KLE University Logo" class="kle-logo">
+                <h1 class="logo">Genetic Engineering Lab</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <header class="page-header">
+                <h1>Restriction Enzyme Digestion of DNA</h1>
+                <p class="subtitle">Experiment 7: Restriction enzyme digestion of DNA</p>
+            </header>
+
+            <section class="experiment-content">
+                <div class="content-section">
+                    <h2>Introduction</h2>
+                    <p>
+                        Restriction enzyme digestion is a fundamental technique in molecular biology that involves cutting DNA at 
+                        specific recognition sequences. Restriction enzymes (restriction endonucleases) are proteins that recognize 
+                        and cleave DNA at particular nucleotide sequences, making them essential tools for DNA cloning, mapping, 
+                        and manipulation.
+                    </p>
+                </div>
+
+                <div class="content-section">
+                    <h2>Principle</h2>
+                    <p>
+                        Restriction enzymes recognize specific palindromic DNA sequences (typically 4-8 base pairs) and cut the DNA 
+                        backbone, creating either:
+                    </p>
+                    <ul class="results-list">
+                        <li><strong>Sticky Ends (5' or 3' overhangs):</strong> Single-stranded overhangs that can base-pair with complementary sequences</li>
+                        <li><strong>Blunt Ends:</strong> No overhangs, cut directly across both strands</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2>Common Restriction Enzymes</h2>
+                    <div class="table-container">
+                        <table class="primer-table">
+                            <thead>
+                                <tr>
+                                    <th>Enzyme</th>
+                                    <th>Recognition Sequence</th>
+                                    <th>Cut Type</th>
+                                    <th>Applications</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>EcoRI</td>
+                                    <td>5'-GAATTC-3'</td>
+                                    <td>Sticky (5')</td>
+                                    <td>General cloning</td>
+                                </tr>
+                                <tr>
+                                    <td>BamHI</td>
+                                    <td>5'-GGATCC-3'</td>
+                                    <td>Sticky (5')</td>
+                                    <td>General cloning</td>
+                                </tr>
+                                <tr>
+                                    <td>HindIII</td>
+                                    <td>5'-AAGCTT-3'</td>
+                                    <td>Sticky (5')</td>
+                                    <td>General cloning</td>
+                                </tr>
+                                <tr>
+                                    <td>XbaI</td>
+                                    <td>5'-TCTAGA-3'</td>
+                                    <td>Sticky (5')</td>
+                                    <td>General cloning</td>
+                                </tr>
+                                <tr>
+                                    <td>PstI</td>
+                                    <td>5'-CTGCAG-3'</td>
+                                    <td>Sticky (3')</td>
+                                    <td>General cloning</td>
+                                </tr>
+                                <tr>
+                                    <td>SmaI</td>
+                                    <td>5'-CCCGGG-3'</td>
+                                    <td>Blunt</td>
+                                    <td>Blunt-end cloning</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h2>Materials Required</h2>
+                    <ul class="results-list">
+                        <li>DNA sample (plasmid or genomic DNA)</li>
+                        <li>Restriction enzyme(s)</li>
+                        <li>10× restriction enzyme buffer</li>
+                        <li>BSA (Bovine Serum Albumin) - if required</li>
+                        <li>Water bath or incubator (37°C, unless otherwise specified)</li>
+                        <li>Agarose gel electrophoresis equipment</li>
+                        <li>DNA ladder (molecular weight marker)</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2>Methodology</h2>
+                    <h3>Single Digest Protocol</h3>
+                    <ol class="results-list">
+                        <li>Prepare reaction mix:
+                            <ul>
+                                <li>DNA (0.5-1 μg): 5-10 μL</li>
+                                <li>10× Buffer: 2 μL</li>
+                                <li>Restriction enzyme: 1 μL (5-10 units)</li>
+                                <li>BSA (if needed): 0.2 μL</li>
+                                <li>Sterile water: to 20 μL final volume</li>
+                            </ul>
+                        </li>
+                        <li>Mix gently by pipetting</li>
+                        <li>Incubate at optimal temperature (typically 37°C) for 1-2 hours</li>
+                        <li>Stop reaction: Heat inactivate (65°C for 20 min) or add loading buffer</li>
+                    </ol>
+
+                    <h3>Double Digest Protocol</h3>
+                    <ol class="results-list">
+                        <li>Check compatibility of buffers and temperatures</li>
+                        <li>Use compatible buffer or perform sequential digests</li>
+                        <li>Use 1-2 μL of each enzyme</li>
+                        <li>Follow same incubation and stopping procedures</li>
+                    </ol>
+                </div>
+
+                <div class="content-section">
+                    <h2>Factors Affecting Digestion</h2>
+                    <ul class="results-list">
+                        <li><strong>Temperature:</strong> Most enzymes work at 37°C, some require different temperatures</li>
+                        <li><strong>Buffer Conditions:</strong> pH, salt concentration, and cofactors must be optimal</li>
+                        <li><strong>DNA Quality:</strong> Impurities can inhibit enzyme activity</li>
+                        <li><strong>Enzyme Concentration:</strong> Use sufficient units for complete digestion</li>
+                        <li><strong>Incubation Time:</strong> 1-2 hours usually sufficient, overnight for difficult sites</li>
+                        <li><strong>Star Activity:</strong> Non-specific cutting at suboptimal conditions</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2>Analysis of Results</h2>
+                    <h3>Agarose Gel Electrophoresis</h3>
+                    <ol class="results-list">
+                        <li>Prepare 0.8-1.5% agarose gel (concentration depends on fragment sizes)</li>
+                        <li>Load digested DNA and undigested control</li>
+                        <li>Include DNA ladder for size comparison</li>
+                        <li>Run electrophoresis at 80-100 V</li>
+                        <li>Stain with ethidium bromide or SYBR Safe</li>
+                        <li>Visualize under UV light</li>
+                    </ol>
+
+                    <h3>Expected Results</h3>
+                    <ul class="results-list">
+                        <li>Undigested DNA: Single band (supercoiled plasmid)</li>
+                        <li>Digested DNA: Multiple bands corresponding to fragment sizes</li>
+                        <li>Fragment sizes should match predicted values</li>
+                        <li>Complete digestion: All fragments visible with no uncut DNA</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2>Applications</h2>
+                    <ul class="results-list">
+                        <li>DNA cloning and vector preparation</li>
+                        <li>Restriction mapping</li>
+                        <li>DNA fingerprinting and genotyping</li>
+                        <li>Recombinant DNA construction</li>
+                        <li>Genetic engineering and modification</li>
+                        <li>DNA fragment purification</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2>Troubleshooting</h2>
+                    <ul class="results-list">
+                        <li><strong>Incomplete Digestion:</strong> Increase enzyme amount, incubation time, or check buffer compatibility</li>
+                        <li><strong>No Bands:</strong> Check enzyme activity, DNA quality, or incorrect buffer</li>
+                        <li><strong>Extra Bands:</strong> Star activity, contamination, or multiple recognition sites</li>
+                        <li><strong>DNA Degradation:</strong> Check DNA extraction protocol, avoid repeated freeze-thaw cycles</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2>Output</h2>
+                    <div class="output-images">
+                        <div class="output-image-container">
+                            <img src="images/experiment-7-output-1.jpg" alt="Experiment 7 Output Image 1" class="result-image">
+                            <!-- <p class="image-caption">Figure 1: Restriction enzyme digestion gel electrophoresis</p> -->
+                        </div>
+                        <!-- <div class="output-image-container">
+                            <img src="images/experiment-7-output-2.jpg" alt="Experiment 7 Output Image 2" class="result-image">
+                            <p class="image-caption">Figure 2: Fragment size analysis and restriction mapping</p>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h2>Conclusion</h2>
+                    <p>
+                        Restriction enzyme digestion is a versatile and essential technique in genetic engineering. Understanding 
+                        enzyme characteristics, optimal conditions, and proper analysis methods enables successful DNA manipulation 
+                        for various molecular biology applications.
+                    </p>
+                </div>
+            </section>
+
+            <div class="container">
+                <a href="index.html" class="back-button">← Back to Home</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Genetic Engineering & Applications Laboratory Course</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

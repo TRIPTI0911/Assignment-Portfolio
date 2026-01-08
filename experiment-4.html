@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRISPR-Cas9 Introduction - Genetic Engineering Lab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-container">
+                <img src="images/kle-logo.png" alt="KLE University Logo" class="kle-logo">
+                <h1 class="logo">Genetic Engineering Lab</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <header class="page-header">
+                <h1>Introduction to CRISPR-Cas9 Gene-Editing Tools</h1>
+                <p class="subtitle">Experiment 4: Introduction to CRISPR-Cas9 gene-editing tools (software demos for design)</p>
+            </header>
+
+            <section class="experiment-content">
+                <div class="content-section">
+                    <h2>Introduction</h2>
+                    <p>
+                        CRISPR-Cas9 (Clustered Regularly Interspaced Short Palindromic Repeats and CRISPR-associated protein 9) is a 
+                        revolutionary gene-editing technology that allows precise modification of DNA sequences. This system has 
+                        transformed genetic engineering by providing a relatively simple, efficient, and cost-effective method for 
+                        targeted genome editing.
+                    </p>
+                </div>
+
+                <div class="content-section">
+                    <h2>CRISPR-Cas9 System Components</h2>
+                    <h3>1. Guide RNA (gRNA)</h3>
+                    <ul class="results-list">
+                        <li>20-nucleotide sequence complementary to target DNA</li>
+                        <li>Directs Cas9 to the specific genomic location</li>
+                        <li>Can be easily designed using bioinformatics tools</li>
+                    </ul>
+
+                    <h3>2. Cas9 Protein</h3>
+                    <ul class="results-list">
+                        <li>Endonuclease that cuts double-stranded DNA</li>
+                        <li>Creates double-strand breaks (DSBs) at target site</li>
+                        <li>Requires PAM (Protospacer Adjacent Motif) sequence: 5'-NGG-3'</li>
+                    </ul>
+
+                    <h3>3. Repair Mechanisms</h3>
+                    <ul class="results-list">
+                        <li><strong>NHEJ (Non-Homologous End Joining):</strong> Creates insertions/deletions (indels)</li>
+                        <li><strong>HDR (Homology-Directed Repair):</strong> Allows precise gene replacement</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2>Bioinformatics Tools for gRNA Design</h2>
+                    <h3>1. CHOPCHOP</h3>
+                    <p>
+                        Web-based tool for selecting optimal gRNA target sites with scoring for efficiency and specificity.
+                    </p>
+
+                    <h3>2. CRISPRdirect</h3>
+                    <p>
+                        Simple tool for designing gRNAs with minimal off-target effects.
+                    </p>
+
+                    <h3>3. Benchling</h3>
+                    <p>
+                        Integrated platform for CRISPR design, visualization, and sequence analysis.
+                    </p>
+
+                    <h3>4. CRISPOR</h3>
+                    <p>
+                        Comprehensive tool that scores gRNAs based on multiple criteria including efficiency, specificity, and PAM availability.
+                    </p>
+
+                    <h3>5. Cas-Designer</h3>
+                    <p>
+                        Tool for designing CRISPR gRNAs with prediction of off-target sites.
+                    </p>
+                </div>
+
+                <div class="content-section">
+                    <h2>gRNA Design Criteria</h2>
+                    <ul class="results-list">
+                        <li><strong>Target Site:</strong> 20 bp upstream of PAM sequence (NGG)</li>
+                        <li><strong>GC Content:</strong> Optimal range 40-60%</li>
+                        <li><strong>Off-Target Sites:</strong> Minimize similarity to other genomic regions</li>
+                        <li><strong>Position:</strong> Target sites near 5' end of coding region for gene knockout</li>
+                        <li><strong>Specificity:</strong> Use tools to check for off-target effects</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2>CRISPR Workflow</h2>
+                    <ol class="results-list">
+                        <li><strong>Target Selection:</strong> Identify genomic region to edit</li>
+                        <li><strong>gRNA Design:</strong> Use bioinformatics tools to design optimal gRNA</li>
+                        <li><strong>Off-Target Analysis:</strong> Verify specificity of chosen gRNA</li>
+                        <li><strong>Plasmid Construction:</strong> Clone gRNA and Cas9 into expression vector</li>
+                        <li><strong>Delivery:</strong> Introduce into target cells (transfection, electroporation, viral vectors)</li>
+                        <li><strong>Validation:</strong> Screen edited cells and verify modifications</li>
+                    </ol>
+                </div>
+
+                <div class="content-section">
+                    <h2>Applications</h2>
+                    <ul class="results-list">
+                        <li><strong>Gene Knockout:</strong> Disrupt gene function through indels</li>
+                        <li><strong>Gene Knock-in:</strong> Insert specific sequences using HDR</li>
+                        <li><strong>Gene Correction:</strong> Fix disease-causing mutations</li>
+                        <li><strong>Gene Regulation:</strong> Use catalytically inactive Cas9 (dCas9) for transcriptional control</li>
+                        <li><strong>Functional Genomics:</strong> Genome-wide screens</li>
+                        <li><strong>Therapeutic Applications:</strong> Treatment of genetic diseases</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2>Advantages</h2>
+                    <ul class="results-list">
+                        <li>High specificity and efficiency</li>
+                        <li>Relatively simple design and implementation</li>
+                        <li>Multiplexing capability (edit multiple sites simultaneously)</li>
+                        <li>Broad applicability across species and cell types</li>
+                        <li>Cost-effective compared to previous methods</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2>Limitations and Considerations</h2>
+                    <ul class="results-list">
+                        <li>Requires PAM sequence (NGG) near target site</li>
+                        <li>Potential off-target effects must be carefully assessed</li>
+                        <li>Efficiency varies depending on cell type and delivery method</li>
+                        <li>Ethical concerns for germline editing</li>
+                        <li>Regulatory considerations for clinical applications</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2>Output</h2>
+                    <div class="output-images">
+                        <div class="output-image-container">
+                            <img src="images/experiment-4-output-1.jpg" alt="Experiment 4 Output Image 1" class="result-image">
+                            <p class="image-caption">Figure 1: CRISPR-Cas9 gRNA design interface</p>
+                        </div>
+                        <!-- <div class="output-image-container">
+                            <img src="images/experiment-4-output-2.jpg" alt="Experiment 4 Output Image 2" class="result-image">
+                            <p class="image-caption">Figure 2: Bioinformatics tool results for gRNA selection</p>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h2>Conclusion</h2>
+                    <p>
+                        CRISPR-Cas9 represents a powerful and versatile tool for genetic engineering. Understanding the principles of 
+                        gRNA design and utilizing appropriate bioinformatics tools are essential for successful gene-editing experiments. 
+                        This technology continues to advance, with new variants and improvements expanding its applications in research 
+                        and therapeutics.
+                    </p>
+                </div>
+            </section>
+
+            <div class="container">
+                <a href="index.html" class="back-button">← Back to Home</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Genetic Engineering & Applications Laboratory Course</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

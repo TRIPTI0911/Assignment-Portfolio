@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer Design - Genetic Engineering Lab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-container">
+                <img src="images/kle-logo.png" alt="KLE University Logo" class="kle-logo">
+                <h1 class="logo">Genetic Engineering Lab</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <header class="page-header">
+                <h1>Primer Design using Bioinformatics Tools</h1>
+                <p class="subtitle">Experiment 5: Primer design using bioinformatics tools (e.g., Primer3)</p>
+            </header>
+
+            <section class="experiment-content">
+                <div class="content-section">
+                    <h2>Introduction</h2>
+                    <p>
+                        Primer design is a critical step in molecular biology experiments, particularly for PCR (Polymerase Chain Reaction) 
+                        applications. This experiment demonstrates the use of bioinformatics tools, specifically Primer-BLAST, to design 
+                        optimal primer pairs for specific genomic targets.
+                    </p>
+                </div>
+
+                <div class="content-section">
+                    <h2>Methodology</h2>
+                    <p>
+                        We used Primer-BLAST, a tool that combines primer design with BLAST search to ensure primer specificity. 
+                        The analysis was performed on <strong>Homo sapiens chromosome 11</strong> (GRCh38.p14 Primary Assembly), 
+                        targeting the genomic region from position 5,226,549 to 5,226,865.
+                    </p>
+                </div>
+
+                <div class="content-section">
+                    <h2>Results</h2>
+                    <p>
+                        Primer-BLAST successfully generated 8 primer pairs with the following specifications:
+                    </p>
+                    <ul class="results-list">
+                        <li>Template: NC_000011.10 Homo sapiens chromosome 11, GRCh38.p14 Primary Assembly</li>
+                        <li>Range: 5,226,549 - 5,226,865</li>
+                        <li>Specificity: Primer pairs are specific to input template with no other targets found in the selected database</li>
+                        <li>Database: NCBI Messenger RNA Reference Sequences (Organism limited to Homo sapiens)</li>
+                    </ul>
+                </div>
+
+
+                <div class="content-section">
+                    <h2>Primer Pair Summary</h2>
+                    <div class="table-container">
+                        <table class="primer-table">
+                            <thead>
+                                <tr>
+                                    <th>Primer Pair</th>
+                                    <th>Forward Primer (5'→3')</th>
+                                    <th>Reverse Primer (5'→3')</th>
+                                    <th>Product Length</th>
+                                    <th>Forward Tm (°C)</th>
+                                    <th>Reverse Tm (°C)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>ACATCAAGCGTCCCATAGAC</td>
+                                    <td>GCACTGACTCTCTCTGCCTA</td>
+                                    <td>290</td>
+                                    <td>57.40</td>
+                                    <td>58.53</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>AACATCAAGCGTCCCATAGAC</td>
+                                    <td>TAGGCACTGACTCTCTCTGC</td>
+                                    <td>294</td>
+                                    <td>58.09</td>
+                                    <td>58.53</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>AAACATCAAGCGTCCCATAGAC</td>
+                                    <td>GGCACTGACTCTCTCTGCCT</td>
+                                    <td>293</td>
+                                    <td>58.73</td>
+                                    <td>61.26</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>AAAACATCAAGCGTCCCATAGAC</td>
+                                    <td>GGCACTGACTCTCTCTGCCTA</td>
+                                    <td>294</td>
+                                    <td>59.31</td>
+                                    <td>60.96</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>AAACATCAAGCGTCCCATAGA</td>
+                                    <td>TGGGTTTCTGATAGGCACTGAC</td>
+                                    <td>306</td>
+                                    <td>57.37</td>
+                                    <td>60.03</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>GAAAACATCAAGCGTCCCATAGA</td>
+                                    <td>ATAGGCACTGACTCTCTCTGC</td>
+                                    <td>298</td>
+                                    <td>59.06</td>
+                                    <td>58.97</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>AAAACATCAAGCGTCCCATAGA</td>
+                                    <td>GATAGGCACTGACTCTCTCTGC</td>
+                                    <td>298</td>
+                                    <td>58.05</td>
+                                    <td>59.97</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>GAAAACATCAAGCGTCCCATAGAC</td>
+                                    <td>TGGGTTTCTGATAGGCACTGA</td>
+                                    <td>308</td>
+                                    <td>60.20</td>
+                                    <td>58.73</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h2>Discussion</h2>
+                    <p>
+                        All eight primer pairs were successfully designed with appropriate melting temperatures (Tm) ranging from 
+                        57.37°C to 61.26°C. The primer pairs show good specificity to the target region with no off-target 
+                        amplification predicted. The product lengths range from 290 to 308 base pairs, which is suitable for 
+                        standard PCR applications.
+                    </p>
+                    <p>
+                        The forward primers have GC content ranging from 40.91% to 50.00%, while reverse primers range from 
+                        47.62% to 60.00%. All primers show acceptable self-complementarity scores, indicating low risk of 
+                        primer-dimer formation.
+                    </p>
+                </div>
+
+                <div class="content-section">
+                    <h2>Output</h2>
+                    <div class="output-images">
+                        <div class="output-image-container">
+                            <img src="images/primer-blast-results-1.png" alt="Primer-BLAST Results - Overview and Primer Pair 1" class="result-image">
+                            <!-- <p class="image-caption">Figure 1: Primer-BLAST Results showing graphical view and detailed report for Primer Pair 1</p> -->
+                        </div>
+                        <div class="output-image-container">
+                            <img src="images/primer-blast-results-2.png" alt="Primer-BLAST Results - Primer Pairs 2-8" class="result-image">
+                            <!-- <p class="image-caption">Figure 2: Detailed analysis of Primer Pairs 2 through 8</p> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h2>Conclusion</h2>
+                    <p>
+                        The Primer-BLAST tool successfully generated multiple specific primer pairs for the target genomic region. 
+                        Primer Pair 1 appears to be optimal with balanced Tm values (57.40°C and 58.53°C) and a product length 
+                        of 290 bp, making it suitable for standard PCR protocols.
+                    </p>
+                </div>
+            </section>
+
+            <div class="container">
+                <a href="index.html" class="back-button">← Back to Home</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Genetic Engineering & Applications Laboratory Course</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

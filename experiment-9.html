@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recombinant Clone Analysis - Genetic Engineering Lab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-container">
+                <img src="images/kle-logo.png" alt="KLE University Logo" class="kle-logo">
+                <h1 class="logo">Genetic Engineering Lab</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <header class="page-header">
+                <h1>Analysis of Recombinant Clones using Colony PCR and Restriction Mapping</h1>
+                <p class="subtitle">Experiment 9: Analysis of recombinant clones using colony PCR and restriction mapping</p>
+            </header>
+
+            <section class="experiment-content">
+                <div class="content-section">
+                    <h2>Introduction</h2>
+                    <p>
+                        After transformation, it is essential to identify and confirm recombinant clones containing the correct insert. 
+                        This experiment uses colony PCR and restriction mapping to rapidly screen and verify recombinant clones without 
+                        the need for plasmid isolation in the initial screening phase. These techniques allow efficient identification 
+                        of positive clones before further analysis.
+                    </p>
+                </div>
+
+                <div class="content-section">
+                    <h2>Principle</h2>
+                    <h3>Colony PCR</h3>
+                    <p>
+                        Bacterial colonies are directly used as template DNA for PCR amplification. Primers specific to the insert or 
+                        vector allow rapid identification of clones containing the desired insert.
+                    </p>
+
+                    <h3>Restriction Mapping</h3>
+                    <p>
+                        Plasmid DNA is digested with restriction enzymes to generate a characteristic pattern of fragments. Comparison 
+                        with expected fragment sizes confirms the presence and orientation of the insert.
+                    </p>
+                </div>
+
+                <div class="content-section">
+                    <h2>Materials Required</h3>
+                    <h3>For Colony PCR</h3>
+                    <ul class="results-list">
+                        <li>Bacterial colonies on agar plates</li>
+                        <li>PCR primers (insert-specific or vector-specific)</li>
+                        <li>PCR master mix (Taq polymerase, dNTPs, buffer)</li>
+                        <li>Sterile toothpicks or pipette tips</li>
+                        <li>PCR tubes or plates</li>
+                        <li>Thermal cycler</li>
+                    </ul>
+
+                    <h3>For Restriction Mapping</h3>
+                    <ul class="results-list">
+                        <li>Plasmid DNA from positive clones</li>
+                        <li>Restriction enzymes</li>
+                        <li>10× restriction enzyme buffer</li>
+                        <li>Agarose gel electrophoresis equipment</li>
+                        <li>DNA ladder</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2>Methodology</h2>
+                    <h3>Colony PCR Protocol</h3>
+                    <ol class="results-list">
+                        <li>Prepare PCR master mix:
+                            <ul>
+                                <li>PCR buffer (10×): 2.5 μL</li>
+                                <li>dNTPs (2 mM each): 2.5 μL</li>
+                                <li>Forward primer (10 μM): 1 μL</li>
+                                <li>Reverse primer (10 μM): 1 μL</li>
+                                <li>Taq polymerase: 0.25 μL</li>
+                                <li>Sterile water: 16.75 μL</li>
+                            </ul>
+                        </li>
+                        <li>Transfer 20 μL master mix to PCR tubes</li>
+                        <li>Pick colony with sterile toothpick and transfer to PCR tube</li>
+                        <li>Mix gently by pipetting</li>
+                        <li>PCR cycling conditions:
+                            <ul>
+                                <li>Initial denaturation: 95°C, 5 minutes</li>
+                                <li>Denaturation: 95°C, 30 seconds</li>
+                                <li>Annealing: 55-60°C, 30 seconds (primer-dependent)</li>
+                                <li>Extension: 72°C, 1 minute/kb</li>
+                                <li>Repeat steps 2-4 for 30-35 cycles</li>
+                                <li>Final extension: 72°C, 5 minutes</li>
+                            </ul>
+                        </li>
+                        <li>Analyze PCR products on agarose gel</li>
+                    </ol>
+
+                    <h3>Restriction Mapping Protocol</h3>
+                    <ol class="results-list">
+                        <li>Isolate plasmid DNA from positive colonies (miniprep)</li>
+                        <li>Set up restriction digest:
+                            <ul>
+                                <li>Plasmid DNA (0.5 μg): 5-10 μL</li>
+                                <li>Restriction enzyme(s): 1-2 μL</li>
+                                <li>10× Buffer: 2 μL</li>
+                                <li>Sterile water: to 20 μL</li>
+                            </ul>
+                        </li>
+                        <li>Incubate at 37°C for 1-2 hours</li>
+                        <li>Run on agarose gel electrophoresis</li>
+                        <li>Compare fragment sizes with expected pattern</li>
+                    </ol>
+                </div>
+
+                <div class="content-section">
+                    <h2>Primer Design Strategies</h2>
+                    <h3>1. Insert-Specific Primers</h3>
+                    <p>
+                        Primers designed within the insert sequence to amplify the entire insert.
+                    </p>
+
+                    <h3>2. Vector-Specific Primers</h3>
+                    <p>
+                        Primers flanking the multiple cloning site (MCS) to amplify vector-insert junction.
+                    </p>
+
+                    <h3>3. Orientation Primers</h3>
+                    <p>
+                        One primer in vector, one in insert to determine insert orientation.
+                    </p>
+                </div>
+
+                <div class="content-section">
+                    <h2>Expected Results</h2>
+                    <h3>Colony PCR</h3>
+                    <ul class="results-list">
+                        <li><strong>Positive Clone:</strong> PCR product of expected size visible on gel</li>
+                        <li><strong>Negative Clone:</strong> No PCR product or product of wrong size</li>
+                        <li><strong>Empty Vector:</strong> Different band pattern or no band</li>
+                    </ul>
+
+                    <h3>Restriction Mapping</h3>
+                    <ul class="results-list">
+                        <li>Fragments match predicted sizes for correct clone</li>
+                        <li>Insert size confirmed</li>
+                        <li>Vector backbone fragments present</li>
+                        <li>Orientation can be determined with asymmetric enzymes</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2>Analysis</h2>
+                    <h3>Gel Electrophoresis</h3>
+                    <ol class="results-list">
+                        <li>Prepare 1-2% agarose gel</li>
+                        <li>Load PCR products or restriction digests</li>
+                        <li>Include appropriate DNA ladder</li>
+                        <li>Run electrophoresis</li>
+                        <li>Stain and visualize under UV light</li>
+                        <li>Compare with expected sizes</li>
+                    </ol>
+
+                    <h3>Interpretation</h3>
+                    <ul class="results-list">
+                        <li>Calculate fragment sizes based on ladder</li>
+                        <li>Compare with theoretical fragment sizes</li>
+                        <li>Identify positive clones</li>
+                        <li>Select clones for further analysis (sequencing)</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2>Advantages</h2>
+                    <ul class="results-list">
+                        <li><strong>Rapid Screening:</strong> Results within hours</li>
+                        <li><strong>Cost-Effective:</strong> No need for plasmid prep in initial screening</li>
+                        <li><strong>High Throughput:</strong> Screen many colonies simultaneously</li>
+                        <li><strong>Reliable:</strong> Direct confirmation of insert presence</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2>Troubleshooting</h2>
+                    <ul class="results-list">
+                        <li><strong>No PCR Product:</strong> Check primers, annealing temperature, colony viability</li>
+                        <li><strong>False Positives:</strong> Use multiple primers or restriction enzymes</li>
+                        <li><strong>Non-Specific Bands:</strong> Optimize PCR conditions, check primer specificity</li>
+                        <li><strong>Unexpected Fragment Sizes:</strong> Verify restriction sites, check for partial digestion</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2>Further Verification</h2>
+                    <p>
+                        After initial screening, positive clones should be verified by:
+                    </p>
+                    <ul class="results-list">
+                        <li>Sanger sequencing to confirm exact sequence</li>
+                        <li>Expression analysis (if applicable)</li>
+                        <li>Functional assays</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2>Applications</h2>
+                    <ul class="results-list">
+                        <li>Recombinant clone screening</li>
+                        <li>Library screening</li>
+                        <li>Mutant identification</li>
+                        <li>Insert orientation determination</li>
+                        <li>Quality control in cloning workflows</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2>Output</h2>
+                    <div class="output-images">
+                        <div class="output-image-container">
+                            <img src="images/experiment-9-output-1.jpg" alt="Experiment 9 Output Image 1" class="result-image">
+                            <!-- <p class="image-caption">Figure 1: Colony PCR results showing positive clones</p> -->
+                        </div>
+                        <!-- <div class="output-image-container">
+                            <img src="images/experiment-9-output-2.jpg" alt="Experiment 9 Output Image 2" class="result-image">
+                            <p class="image-caption">Figure 2: Restriction mapping analysis of recombinant plasmids</p>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h2>Conclusion</h2>
+                    <p>
+                        Colony PCR and restriction mapping provide efficient and reliable methods for screening recombinant clones. 
+                        These techniques enable rapid identification of positive clones, saving time and resources compared to 
+                        sequencing all colonies. Combined with proper controls and analysis, these methods ensure successful clone 
+                        identification in genetic engineering workflows.
+                    </p>
+                </div>
+            </section>
+
+            <div class="container">
+                <a href="index.html" class="back-button">← Back to Home</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Genetic Engineering & Applications Laboratory Course</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
